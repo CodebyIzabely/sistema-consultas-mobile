@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 8,
         elevation: 5,
+        marginBottom: 16,
     },
     statusBadge: {
         backgroundColor: "#FFA500",
@@ -84,4 +85,5 @@ export const styles = StyleSheet.create({
         fontWeight: "600",
         textAlign: "center",
     },
+
 });
