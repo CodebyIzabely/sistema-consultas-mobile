@@ -81,12 +81,13 @@ export default function Admin({
             return;
         }
 
-        const novoMed: Medico = {
-            id: medicos.length + 1,
-            nome: nomeMed,
-            crm: crmMed,
-            especialidade: especialidades[0],
-            ativo: true,
+       const novoMed: Medico = {
+        id: medicos.length + 1,
+        nome: nomeMed,
+        crm: crmMed,
+        email: `${nomeMed.trim().toLowerCase().replace(/\s+/g, ".")}@clinica.com`,
+        especialidade: especialidades[0],
+        ativo: true,
         };
 
         const novosMeds = [...medicos, novoMed];
